@@ -41,3 +41,48 @@ while True:
     if cv2.waitKey(20) & 0xFF == ord('q'):break
 cap.release()
 cv2.destroyAllWindows()
+
+
+
+
+
+
+
+
+# should import hand tracking module
+
+
+# import cv2
+# import mediapipe as mp
+# import numpy as np
+# import time
+# import module as hd
+
+
+# cTime,pTime =0,0
+
+# cap = cv2.VideoCapture(1)
+# Detector = hd.handDetector()
+
+# cX,cY = [],[]
+# while True:
+#     ret, frame = cap.read()
+#     Detector.findHands(frame)
+#     list = Detector.tipRaiseInfo(frame);st=""
+#     pos = Detector.findPosition(frame)
+#     if len(pos)!=0:
+#         for i in list :st=st+str(i)
+#         if int(st)/1000 ==1 or int(st)/1000 == 11:cX.append(pos[8][1]);cY.append(pos[8][2])
+#     #for i in range(len(cX)):cv2cv2.circle(frame,(cX[i],cY[i]),10,(210,123,92),cv2.FILLED)
+
+#     cTime = time.time()
+#     fps = int(1/(cTime-pTime))
+#     pTime=cTime
+
+#     frame = cv2.flip(frame,1)
+#     cv2.putText(frame,str(fps),(10,50),cv2.FONT_HERSHEY_PLAIN,2,(255,12,13),3)
+#     cv2.imshow('Web Cam', frame)
+#     if cv2.waitKey(20) & 0xFF == ord('q'):break
+
+# cap.release()
+# cv2.destroyAllWindows()
