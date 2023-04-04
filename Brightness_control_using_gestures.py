@@ -78,7 +78,7 @@ def main():
             cv2.circle(frame,(LMs[8][1],LMs[8][2]),8,(255,124,24),cv2.FILLED)
             cv2.circle(frame,((LMs[4][1]+LMs[8][1])//2,(LMs[4][2]+LMs[8][2])//2),8,(255,0,24),cv2.FILLED)
 
-            dist = math.dist([LMs[4][1],LMs[4][2]],[LMs[8][1],LMs[8][2]])
+            dist = int(math.dist([LMs[4][1],LMs[4][2]],[LMs[8][1],LMs[8][2]]))
             if dist in range(50,151):sbc.set_brightness(int(dist-50),display=0)
             if dist<50:cv2.circle(frame,((LMs[4][1]+LMs[8][1])//2,(LMs[4][2]+LMs[8][2])//2),8,(0,0,0),cv2.FILLED);sbc.set_brightness(0,display=0)
             if dist>150:cv2.circle(frame,((LMs[4][1]+LMs[8][1])//2,(LMs[4][2]+LMs[8][2])//2),8,(255,255,255),cv2.FILLED);sbc.set_brightness(100,display=0)
