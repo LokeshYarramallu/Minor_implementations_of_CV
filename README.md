@@ -13,3 +13,7 @@
 
 ## 4. Virtual Drawing
 ![Screenshot 2023-04-03 094318](https://user-images.githubusercontent.com/75054074/229410146-b2d7a244-fbda-4c34-96cd-7233e11557ad.png)
+
+
+## 5. Gester Brightness Control
+![BeFunky-collage (1)](https://user-images.githubusercontent.com/75054074/229845822-bb316580-8268-4c3a-a1fd-7d16c31f23c3.jpg)
