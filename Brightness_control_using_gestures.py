@@ -94,7 +94,8 @@ def main():
 
         frame = cv2.flip(frame, 1)
         #cv2.putText(frame, str(fps), (10, 50), cv2.FONT_HERSHEY_PLAIN, 2, (255, 12, 13), 3)
-        cv2.putText(frame, str(int(dist-50)), (10, 50), cv2.FONT_HERSHEY_PLAIN, 2, (255, 12, 13), 3)
+        if (int(dist-50)) in range(0,101):
+            cv2.putText(frame, str(int(dist-50)), (10, 50), cv2.FONT_HERSHEY_PLAIN, 2, (255, 12, 13), 3)
 
         cv2.imshow('Web Cam', frame)
         if cv2.waitKey(20) & 0xFF == ord('q'): break
